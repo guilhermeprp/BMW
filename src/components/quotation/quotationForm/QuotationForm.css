@@ -1,0 +1,111 @@
+.quotation__form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+.quotation__form__title {
+  margin: 14px 0 15px 0;
+
+  font-size: 20px;
+}
+
+.quotation__form > div {
+  position: relative;
+}
+
+.quotation__form > div p {
+  position: absolute;
+  top: 15px;
+  left: 3px;
+
+  color: #666;
+  font-size: 14px;
+  font-family: "Arial";
+
+  transition: 0.3s;
+}
+
+.quotation__form > div :where(input, textarea, select) {
+  width: 100%;
+  border-bottom: 1px solid #c0c0c0;
+  padding-bottom: 10px;
+
+  font-size: 14px;
+  font-family: "Arial";
+}
+
+.quotation__form > div :where(input, textarea, select):focus {
+  border-bottom: 1px solid #1c69d4;
+}
+
+.quotation__form > div :where(input, textarea):focus + p,
+.quotation__form > div :where(input, textarea):not(:placeholder-shown) + p {
+  top: 0;
+
+  font-size: 10px;
+}
+
+.quotation__form > div :where(input, textarea, select)::placeholder {
+  color: #666;
+  font-family: "Arial";
+}
+
+.quotation__form > div :where(input, textarea) {
+  padding-left: 4px;
+}
+
+.quotation__form > div :where(input, select) {
+  height: 29px;
+  margin: 15px 0;
+}
+
+.quotation__form select:invalid {
+  color: #666;
+}
+
+.quotation__form textarea {
+  height: 39px;
+  resize: none;
+}
+
+.quotation__form label {
+  display: flex;
+  align-items: flex-start;
+
+  width: 100%;
+  height: 16px;
+  margin: 20px auto;
+}
+
+.quotation__form label input {
+  display: inline-block;
+}
+
+.quotation__form__agree {
+  display: inline-block;
+
+  margin-left: 10px;
+
+  font-size: 12px;
+}
+
+.quotation__form__submit__button {
+  width: 100%;
+  height: 45px;
+  background-color: #1c69d4;
+
+  font-size: 14px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .quotation__form {
+    max-width: 255px;
+  }
+}

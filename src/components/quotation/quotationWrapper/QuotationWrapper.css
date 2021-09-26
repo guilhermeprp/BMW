@@ -1,0 +1,48 @@
+.quotation__wrapper {
+  position: fixed;
+  inset: 45px 0 0 0;
+  z-index: 99;
+
+  background: rgba(0, 0, 0, 0.3);
+
+  animation: 0.5s FadeOut ease forwards;
+}
+
+.quotation__wrapper__close__button {
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 45px;
+  padding: 13px 0;
+
+  background: #666666;
+
+  color: #fff;
+  font-size: 14px;
+}
+
+.quotation__form__container {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .quotation__wrapper {
+    inset: 60px 0 0 0;
+  }
+  .quotation__wrapper__close__button {
+    height: 60px;
+    max-width: 255px;
+  }
+}
+
+@keyframes FadeOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

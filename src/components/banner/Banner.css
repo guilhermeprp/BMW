@@ -1,0 +1,24 @@
+.banner {
+  position: relative;
+
+  margin-top: 105px;
+  height: 432px;
+  width: 100%;
+  background: silver;
+}
+
+.banner .quotation__form {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    height: 780px;
+  }
+  .banner .quotation__form {
+    display: block;
+
+    top: 29.5px;
+    right: 321px;
+  }
+}
