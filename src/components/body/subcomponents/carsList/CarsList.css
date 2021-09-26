@@ -46,10 +46,26 @@
 
 .choose__car__button__quotation {
   background: #1c69d4;
+
+  transition: 0.3s;
+}
+
+.choose__car__button__quotation:hover {
+  cursor: pointer;
+
+  background: #0966af;
 }
 
 .choose__car__button__call {
   background: #666666;
+
+  transition: 0.3s;
+}
+
+.choose__car__button__call:hover {
+  cursor: pointer;
+
+  background: #707070;
 }
 
 .choose__car__share {

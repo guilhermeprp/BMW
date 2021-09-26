@@ -11,6 +11,14 @@
 
   color: #fff;
   font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.solicitation__button:hover {
+  background: #0966af;
+
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -19,5 +27,9 @@
 
     height: 60px;
     max-width: 255px;
+
+    transform-origin: top;
+
+    animation: 0.5s SlideDown ease forwards;
   }
 }

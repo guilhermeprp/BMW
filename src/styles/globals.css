@@ -14,3 +14,24 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+@keyframes SlideDown {
+  0% {
+    opacity: 0;
+    top: -60px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes FadeOut {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

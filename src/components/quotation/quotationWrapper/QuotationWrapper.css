@@ -21,6 +21,14 @@
 
   color: #fff;
   font-size: 14px;
+
+  transition: 0.3s;
+}
+
+.quotation__wrapper__close__button:hover {
+  background: #707070;
+
+  cursor: pointer;
 }
 
 .quotation__form__container {
@@ -34,15 +42,5 @@
   .quotation__wrapper__close__button {
     height: 60px;
     max-width: 255px;
-  }
-}
-
-@keyframes FadeOut {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
   }
 }

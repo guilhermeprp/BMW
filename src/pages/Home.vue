@@ -1,5 +1,5 @@
 <template>
-  <Header v-if="headerShow" />
+  <Header v-if="show" />
   <Banner />
   <Body />
   <Footer />
@@ -20,29 +20,26 @@ export default {
   },
   data() {
     return {
-      headerShow: false,
+      show: false,
     };
   },
   mounted() {
-    window.addEventListener("scroll", this.headerHandler);
+    window.addEventListener("scroll", this.scrollHandler);
     window.addEventListener("resize", this.resizeHandler);
     this.$nextTick(this.mobileHandler);
   },
   methods: {
-    headerHandler() {
+    scrollHandler() {
       if (window.innerWidth > 768) {
-        this.headerShow = window.pageYOffset > 550;
+        this.show = window.pageYOffset > 550;
       }
     },
     resizeHandler() {
-      this.headerShow = window.innerWidth < 768;
+      this.show = window.innerWidth < 768;
     },
     mobileHandler() {
-      this.headerShow = window.innerWidth < 768;
+      this.show = window.innerWidth < 768;
     },
-  },
-  props: {
-    msg: String,
   },
 };
 </script>
