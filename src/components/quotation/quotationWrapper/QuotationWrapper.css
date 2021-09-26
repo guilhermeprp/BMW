@@ -1,11 +1,11 @@
 .quotation__wrapper {
   position: fixed;
   inset: 45px 0 0 0;
-  z-index: 99;
+  z-index: 11;
 
   background: rgba(0, 0, 0, 0.3);
 
-  animation: 0.5s FadeOut ease forwards;
+  animation: 0.5s FadeIn ease forwards;
 }
 
 .quotation__wrapper__close__button {

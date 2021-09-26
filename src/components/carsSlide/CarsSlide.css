@@ -1,0 +1,87 @@
+.cars__slide {
+  position: absolute;
+  top: 152px;
+  z-index: 13;
+
+  width: 100vw;
+  height: 383px;
+  background: #fff;
+}
+
+.cars__slide__container {
+  position: relative;
+
+  display: contents;
+}
+
+.cars__slide__wrappper {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+
+  max-width: 1350px;
+  margin: 0 auto;
+  height: 100%;
+
+  overflow: scroll hidden;
+
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.cars__slide__wrappper::-webkit-scrollbar {
+  display: none;
+}
+
+.cars__slide__wrappper__container {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+
+  scroll-snap-align: start;
+}
+
+.cars__slide__arrow__left,
+.cars__slide__arrow__right {
+  position: sticky;
+  background: transparent;
+
+  padding: 10px;
+
+  transform: scaleY(1.8);
+}
+
+.cars__slide__arrow__left {
+  left: 0;
+}
+
+.cars__slide__arrow__right {
+  right: 0;
+}
+
+.cars__slide__control__buttons {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.cars__slide__control__buttons button {
+  width: 14px;
+  height: 14px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: #666666;
+}
+
+.cars__slide__control__buttons button:hover {
+  cursor: pointer;
+}

@@ -1,22 +1,34 @@
 <template>
+  <Navbar />
   <Header v-if="show" />
   <Banner />
   <Body />
   <Footer />
+  <Whatsapp v-if="show" />
+  <Baseboard v-if="show" />
 </template>
 
 <script>
-import Header from "../components/header/Header.vue";
-import Banner from "../components/banner/Banner.vue";
-import Body from "../components/body/Body.vue";
-import Footer from "../components/footer/Footer.vue";
+import {
+  Navbar,
+  Header,
+  Banner,
+  Body,
+  Footer,
+  FloatingActionButton,
+  Baseboard,
+} from "../components/index";
+
 export default {
   name: "Home",
   components: {
+    Navbar,
     Header,
     Banner,
     Body,
     Footer,
+    Whatsapp: FloatingActionButton,
+    Baseboard,
   },
   data() {
     return {

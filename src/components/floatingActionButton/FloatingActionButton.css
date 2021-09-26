@@ -1,0 +1,19 @@
+.floating__action__button {
+  position: fixed;
+  bottom: 16px;
+  left: 16px;
+  z-index: 9;
+
+  width: 63px;
+  height: 63px;
+  background: #25d366;
+  border-radius: 50%;
+
+  box-shadow: 0px 10px 20px #00000029;
+
+  animation: 0.5s FadeIn ease forwards;
+}
+
+.floating__action__button:hover {
+  cursor: pointer;
+}
